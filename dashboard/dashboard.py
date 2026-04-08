@@ -9,7 +9,7 @@ st.set_page_config(page_title="Bike Sharing Dashboard", page_icon="🚲", layout
 # Fungsi untuk memuat dan membersihkan data (menggunakan cache agar lebih cepat)
 @st.cache_data
 def load_data():
-    df = pd.read_csv("day.csv")
+    df = pd.read_csv("dashboard/day.csv")
     
     # Mengubah format tanggal
     df['dteday'] = pd.to_datetime(df['dteday'])
